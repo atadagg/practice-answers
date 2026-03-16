@@ -44,3 +44,28 @@ public:
         return max_size;
     }
 };
+
+//even faster with absurd optimization by not using vector(uses heap) and max function. but the time difference is abysmal.
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int last_seen[128] = {0};
+        int left = 0;
+        int max_size = 0;
+
+
+        for (int right = 0; right < s.size(); right++){
+            char current_char = s[right];
+
+            if(last_seen[current_char] > left){
+                left = last_seen[current_char];
+            }
+
+            last_seen[current_char] = right + 1;
+
+            if(max_size < right - left + 1 ){ max_size = right-left+1; };
+        }
+        return max_size;
+    }
+};
