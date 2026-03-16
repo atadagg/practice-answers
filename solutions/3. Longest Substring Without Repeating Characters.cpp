@@ -20,7 +20,7 @@ public:
 };
 
 //max speed version with a 128 slot array:
-
+auto init = []() { ios_base::sync_with_stdio(false); cin.tie(NULL); return 'c'; }(); //cheating
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
