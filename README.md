@@ -1,6 +1,3 @@
-These are the solutions I found for leetcode.com problems.
-<br>
+this a record of every shot made
 
-This repository is for personal use but you are free to look.
-
-You can also check my Project Euler account: atadagg
+but im afraid they mean nothing, as victories are for losers, real victory is losing.
